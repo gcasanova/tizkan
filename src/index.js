@@ -11,3 +11,7 @@ import 'bootstrap/dist/css/bootstrap-theme.min.css';
 
 ReactDOM.render(<Navbar />, document.getElementById('root'));
 registerServiceWorker();
+
+if (module.hot) {
+    module.hot.accept();
+}
