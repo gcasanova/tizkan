@@ -1,0 +1,103 @@
+// NAVBAR CONTAINER MARGINS
+$container-margin-bottom: 15px;
+$containter-margin-top-0: 45px;
+$containter-margin-top-1: 37.5px;
+$containter-margin-top-2: 30px;
+$containter-margin-top-3: 22.5px;
+$containter-margin-top-4: 15px;
+
+// MUST USE IMPORTANT VALUE IN MANY CASES TO OVERWRITE DEFAULT
+// STYLES OF NON-READILY ACCESIBLE COMPONENT ELEMENTS (EXTERNAL LIBRARY COMPONENTS)
+.navbar-default .navbar-nav > li > a {
+  color: black !important;
+  text-shadow: none !important;
+}
+
+@media (min-width: 768px) {
+  .navbar-default .navbar-nav > li > a:hover {
+    border-bottom: 2px solid black;
+    padding-bottom: 4px;
+  }
+}
+
+.navbar-default .navbar-toggle {
+  border-color: black !important;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: black !important;
+}
+
+.navbar-header > img {
+  float: left;
+}
+
+nav {
+  border: none !important;
+  margin-bottom: 0;
+}
+
+nav.scroll-0 {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  background: rgba(255, 255, 255, 0);
+}
+
+nav.scroll-1 {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+nav.scroll-2 {
+  background: rgba(255, 255, 255, 0.50);
+}
+
+nav.scroll-3 {
+  background: rgba(255, 255, 255, 0.75);
+}
+
+nav.scroll-4 {
+  background: rgba(255, 255, 255, 1);
+}
+
+.container {
+  margin-top: $containter-margin-top-0;
+  margin-bottom: $container-margin-bottom;
+  transition: margin-top 2.1 ease;
+}
+
+.container.scroll-1 {
+  margin-top: $containter-margin-top-1;
+}
+
+.container.scroll-2 {
+  margin-top: $containter-margin-top-2;
+}
+
+.container.scroll-3 {
+  margin-top: $containter-margin-top-3;
+}
+
+.container.scroll-4 {
+  margin-top: $containter-margin-top-4;
+}
+
+.container > .navbar-header {
+  margin-left: 75px !important;
+}
+
+ul.nav.navbar-nav.navbar-right {
+  font-weight: bold;
+  margin: 7.5px -15px;
+}
+
+.navbar-toggle {
+  margin-top: 12px;
+}
+
+.navbar-toggle:hover {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.navbar-default .navbar-collapse {
+  border-color: black !important;
+}
