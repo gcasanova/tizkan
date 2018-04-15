@@ -11,7 +11,6 @@ class App extends Component {
             <Fragment>
                 <Navbar />
                 <MainPicture />
-                <MainPicture />
                 <Products />
             </Fragment>
         );

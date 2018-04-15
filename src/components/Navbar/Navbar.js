@@ -96,14 +96,11 @@ class myNavbar extends Component {
               </Navbar.Header>
               <Navbar.Collapse>
                 <Nav pullRight>
-                  <NavItem eventKey={1} href="#">
+                  <NavItem eventKey={1} href="#products">
                     PRODUCTS
                   </NavItem>
                   <NavItem eventKey={2} href="#">
-                    ABOUT
-                  </NavItem>
-                  <NavItem eventKey={3} href="#">
-                    CONTACT US
+                    ABOUT US
                   </NavItem>
                 </Nav>
               </Navbar.Collapse>
