@@ -8,24 +8,17 @@ $containter-margin-top-4: 15px;
 
 // MUST USE IMPORTANT VALUE IN MANY CASES TO OVERWRITE DEFAULT
 // STYLES OF NON-READILY ACCESIBLE COMPONENT ELEMENTS (EXTERNAL LIBRARY COMPONENTS)
-.navbar-default .navbar-nav > li > a {
+.navbar-default .navbar-nav > li > a > a {
   color: black !important;
   text-shadow: none !important;
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
-  .navbar-default .navbar-nav > li > a:hover {
+  .navbar-default .navbar-nav > li > a > a:hover {
     border-bottom: 2px solid black;
     padding-bottom: 4px;
   }
-}
-
-.navbar-default .navbar-toggle {
-  border-color: black !important;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: black !important;
 }
 
 .navbar-header > img {

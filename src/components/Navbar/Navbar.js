@@ -1,6 +1,7 @@
 import ReactDOM from 'react-dom';
 import { I18n } from 'react-i18next';
 import React, { Component } from 'react';
+import Scrollchor from 'react-scrollchor';
 import { Navbar, Nav, NavItem, Image } from 'react-bootstrap';
 
 import './css/Navbar.css';
@@ -92,12 +93,8 @@ class myNavbar extends Component {
               </Navbar.Header>
               <Navbar.Collapse>
                 <Nav pullRight >
-                  <NavItem eventKey={1} href='#product'>
-                    PRODUCT
-                  </NavItem>
-                  <NavItem eventKey={2} href='#about'>
-                    ABOUT US
-                  </NavItem>
+                  <NavItem><Scrollchor to='#product'>PRODUCT</Scrollchor></NavItem>
+                  <NavItem><Scrollchor to='#about'>ABOUT US</Scrollchor></NavItem>
                 </Nav>
               </Navbar.Collapse>
             </Navbar>
