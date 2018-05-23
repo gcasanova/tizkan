@@ -3,7 +3,7 @@ import React, { Component, Fragment } from 'react';
 // components
 import Navbar from './Navbar/Navbar';
 import MainPicture from './MainPicture/MainPicture';
-import Products from './Products/Products';
+import Sections from './Sections/Sections';
 
 class App extends Component {
     render() {
@@ -11,7 +11,7 @@ class App extends Component {
             <Fragment>
                 <Navbar />
                 <MainPicture />
-                <Products />
+                <Sections />
             </Fragment>
         );
     }

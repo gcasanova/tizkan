@@ -14,7 +14,7 @@ const GalleryImage = ({ index, onClick, photo, margin }) => {
     <div style={{ margin, width: photo.width, ...cont }}>
       <FadeIn height={photo.height} offset={100} duration={1500}>
         {onload => (
-          <img {...photo} onLoad={onload} onClick={(e) => onClick(e, { index, photo })} />
+          <img {...photo} alt={photo.alt} onLoad={onload} />
         )}
       </FadeIn>
     </div>

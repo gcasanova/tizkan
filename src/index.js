@@ -6,6 +6,7 @@ import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 
 // CUSTOM IMPORTS
+import 'animate.css/animate.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap-theme.min.css';
 

@@ -31,12 +31,7 @@ class myNavbar extends Component {
   }
 
   handleScroll(e) {
-    const y = e.pageY;
-
-    const element = ReactDOM.findDOMNode(this).getElementsByClassName('container')[0];
-    for (const prop in element) {
-      console.log('prop: ' + prop);
-    }
+    const y = e.pageY || document.documentElement.scrollTop;
   
     if (y !== 0) {
       if (y <= 20 && this.state.class !== `${CLASS_PREFIX}1`) {
@@ -85,21 +80,22 @@ class myNavbar extends Component {
   }
 
   render() {
+    const classes = `${this.state.class} fadeInDown animated`;
+
     return (
       <I18n>
         {
           (t, { i18n }) => (
-            <Navbar ref="navbar" className={this.state.class} collapseOnSelect fixedTop>
+            <Navbar ref='navbar' className={classes} fixedTop>
               <Navbar.Header>
                 <Image src={tizkanImage} responsive />
-                <Navbar.Toggle />
               </Navbar.Header>
               <Navbar.Collapse>
-                <Nav pullRight>
-                  <NavItem eventKey={1} href="#products">
-                    PRODUCTS
+                <Nav pullRight >
+                  <NavItem eventKey={1} href='#product'>
+                    PRODUCT
                   </NavItem>
-                  <NavItem eventKey={2} href="#">
+                  <NavItem eventKey={2} href='#about'>
                     ABOUT US
                   </NavItem>
                 </Nav>
