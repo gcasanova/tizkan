@@ -91,8 +91,9 @@ class myNavbar extends Component {
               <Navbar.Header>
                 <Image src={tizkanImage} responsive />
               </Navbar.Header>
+
               <Navbar.Collapse>
-                <Nav pullRight >
+                <Nav pullRight>
                   <NavItem><Scrollchor to='#product'>PRODUCT</Scrollchor></NavItem>
                   <NavItem><Scrollchor to='#about'>ABOUT US</Scrollchor></NavItem>
                 </Nav>

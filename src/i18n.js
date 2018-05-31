@@ -9,6 +9,7 @@ i18n
     .use(reactI18nextModule) // if not using I18nextProvider
     .init({
         debug: true,
+        load: 'languageOnly',
         fallbackLng: 'es',
         backend: {
             loadPath: '/locales/{{lng}}/{{ns}}.json'
@@ -25,6 +26,13 @@ i18n
             bindStore: 'added removed',
             nsMode: 'default'
         }
+    }, (err, t) => {
+        if (err) {
+            console.log('Something went wrong loading language', err);
+            return;
+        }
+
+        i18n.emit('init');
     });
 
 
