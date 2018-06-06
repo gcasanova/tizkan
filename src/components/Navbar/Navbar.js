@@ -94,8 +94,9 @@ class myNavbar extends Component {
 
               <Navbar.Collapse>
                 <Nav pullRight>
-                  <NavItem><Scrollchor to='#product'>PRODUCT</Scrollchor></NavItem>
                   <NavItem><Scrollchor to='#about'>ABOUT US</Scrollchor></NavItem>
+                  <NavItem><Scrollchor to='#bee'>BLACK BEE</Scrollchor></NavItem>
+                  <NavItem><Scrollchor to='#footer'>CONTACT</Scrollchor></NavItem>
                 </Nav>
               </Navbar.Collapse>
             </Navbar>
