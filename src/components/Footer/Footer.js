@@ -13,6 +13,18 @@ import englishFlagImage from '../../images/english.png';
 // Import a pre-configured instance of i18next
 import i18n from '../../i18n';
 
+function hex_to_ascii(str1) {
+    let str = '';
+    for (var n = 0; n < str1.length; n += 2) {
+        str += String.fromCharCode(parseInt(str1.substr(n, 2), 16));
+    }
+    return str;
+}
+
+const email = hex_to_ascii('6d69656c2e74697a6b616e40676d61696c2e636f6d');
+const phone1 = hex_to_ascii('2b3334203637382034373520353436');
+const phone2 = hex_to_ascii('2b3334203636362030373920343331');
+
 class About extends Component {
     constructor(props) {
         super(props);
@@ -53,15 +65,18 @@ class About extends Component {
                 {
                     (t, { i18n }) => (
                         <Row className='show-grid' id='footer'>
-                            <Col md={6} className='text-center hidden-sm hidden-xs'>
-                                <FadeIn duration={1200}>
-                                    {onload => (
-                                        <Image src={tizkanImage} onLoad={onload} responsive />
-                                    )}
-                                </FadeIn>
-                                <ScrollAnimation offset={1000} duration={1.5} animateOnce='true' animateIn='bounceInLeft'>
-                                    <h5>@ 2018 Tizkán &reg;</h5>
-                                </ScrollAnimation>
+                            <Col md={3} className='hidden-sm hidden-xs'></Col>
+                            <Col md={2} className='hidden-sm hidden-xs'>
+                                <div className="text-center">
+                                    <FadeIn duration={1200}>
+                                        {onload => (
+                                            <Image src={tizkanImage} onLoad={onload} />
+                                        )}
+                                    </FadeIn>
+                                    <ScrollAnimation offset={1000} duration={1.5} animateOnce='true' animateIn='bounceInLeft'>
+                                        <h5>@ 2018 Tizkán &reg;</h5>
+                                    </ScrollAnimation>
+                                </div>
                             </Col>
 
                             <Col md={4}>
@@ -75,24 +90,32 @@ class About extends Component {
                                                     <Glyphicon glyph='earphone' />
                                                 </Col>
                                                 <Col>
-                                                    <h4> +34 678 475 546</h4>
-                                                    <h4> +34 666 079 431</h4>
+                                                    <h4>{phone1}</h4>
+                                                    <h4>{phone2}</h4>
+                                                </Col>
+                                            </Col>
+
+                                            <Col xs={12} className='hidden-md hidden-lg flex'>
+                                                <Col className='glyphicon'>
+                                                    <Glyphicon glyph='envelope' />
+                                                </Col>
+                                                <Col>
+                                                    <h4>{email}</h4>
                                                 </Col>
                                             </Col>
                                         </Row>
 
-                                        <Row className='show-grid flex'>
+                                        <Row className='hidden-sm hidden-xs show-grid'>
                                             <Col xs={12} className='flex'>
                                                 <Col className='glyphicon'>
                                                     <Glyphicon glyph='envelope' />
                                                 </Col>
                                                 <Col>
-                                                    <h4> miel.tizkan@gmail.com</h4>
+                                                    <h4>{email}</h4>
                                                 </Col>
                                             </Col>
                                         </Row>
 
-                                        <h5 className='visible-xs'>@ 2018 Tizkán &reg;</h5>
                                     </article>
                                 </ScrollAnimation>
                             </Col>

@@ -20,8 +20,6 @@ import imageHoneyGreen560 from '../../images/honey_green/560x374.jpg';
 import imageHoneyGreen1120 from '../../images/honey_green/1120x747.jpg';
 
 import imageHoneyFront from '../../images/honey_front/default.jpg';
-import imageHoneyFront168 from '../../images/honey_front/168x195.jpg';
-import imageHoneyFront210 from '../../images/honey_front/210x244.jpg';
 import imageHoneyFront252 from '../../images/honey_front/252x293.jpg';
 import imageHoneyFront420 from '../../images/honey_front/420x488.jpg';
 import imageHoneyFront840 from '../../images/honey_front/840x976.jpg';
@@ -59,8 +57,8 @@ const PHOTO_SET = [
     },
     {
         src: imageHoneyFront,
-        srcSet: `${imageHoneyFront168} 168w, ${imageHoneyFront210} 210w, ${imageHoneyFront252} 252w, ${imageHoneyFront420} 420w, ${imageHoneyFront840} 840w`,
-        sizes: '(max-width: 768px) 168px, (max-width: 1000px) 210px, (max-width: 1200px) 252px, (max-width:1800px) 420px, 840px',
+        srcSet: `${imageHoneyFront252} 252w, ${imageHoneyFront420} 420w, ${imageHoneyFront840} 840w`,
+        sizes: '(max-width: 1200px) 252px, (max-width:1800px) 420px, 840px',
         width: 0.8,
         height: 1,
         alt: 'Honey bottle front side'

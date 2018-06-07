@@ -43,17 +43,11 @@ class Bee extends Component {
                             <Col md={12} lg={6}>
                                 <ScrollAnimation offset={100} duration={1.5} animateOnce='true' animateIn='bounceInLeft'>
                                     <article className='text-center'>
-                                        <h3 className='section-title'>BLACK BEE</h3>
+                                        <h3 className='section-title'>{t('blackBee.title')}</h3>
 
-                                        <p>
-                                            El mayor tesoro que posee la apicultura de las Islas Canarias es su raza de abejas, una raza autóctona. La Abeja Negra Canaria, escindida hace unos 200.000 años de un brazo común que lo emparenta con las abejas africanas y portuguesas, ha desarrollado unas características genéticas que la hacen única en el mundo.
-                                        </p>
-                                        <p>
-                                            Como la mayoría de los seres vivos de las Islas Canarias, son consecuencia del efecto del aislamiento durante siglos en su proceso de evolución y adaptación al medio, constituyendo de este modo a ser parte integrante de la biodiversidad específica de Canarias.
-                                        </p>
-                                        <p>
-                                            Las abejas cumplen una función crucial de polinización en nuestro planeta. Fomentando el consumo de miel local, impulsamos la actividad apicultora y por tanto, influimos de forma positiva sobre nuestro medio ambiente. Nosotros también ayudamos a la protección de una raza autóctona, nuestra abeja. Además, la miel es un producto que contiene antioxidantes, vitaminas y minerales, además de ser antimicrobiana y antiséptica, por lo que usarla en lugar de azúcar es un hábito saludable.
-                                        </p>
+                                        <p>{t('blackBee.first')} </p>
+                                        <p>{t('blackBee.second')}</p>
+                                        <p>{t('blackBee.third')}</p>
                                     </article>
                                 </ScrollAnimation>
                             </Col>
